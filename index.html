@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ep">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,37 +9,29 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h3>1.El programa muestra primero una tabla de notas con sus equivalentes en el Standard Grading System o el sistema utilizado en los Estados Unidos que va desde la A hasta la F. El programa preguntará al usuario su nota y transformará ese resultado al equivalente en el Standard Grading System. También el programa dará una pequeña pero valiosa recomendación al usuario respecto a su nivel de estudio y calidad como estudiante.</h3>
-    <img class="img" src="img/tabla.png">
+    <h3>2.	"Desarrolle un algoritmo para la empresa Constructora Tecnovivir Casas C.A., que le permita calcular e" imprimir la nómina para su cancelación a un total de 50 obreros calificados a quienes debe cancelar por horas trabajadas. La hora trabajada se pautó en 5,208.33 Pesos.</h3>
 
 
     <form id="myForm" method="get">
-        <div id="selecion">
-            <label>Traditional</label>
-            <input type="radio" name="scale" value="Traditional">
-            <label>Point Range</label>
-            <input type="radio" name="scale" value="Point_Range">
-        </div>
-        <input type="text" name="nota" placeholder="" required>
+        <p>nomina </p>
+        <input type="text" name="nombre" placeholder="nombre del obreros" required>
+        <input type="number" name="horas" placeholder="horas laboradas" required>
         <input type="submit" value="Enviar">
     </form>
 
-    <dialog>
-        <button id="close">X</button>
         <table>
             <thead>
                 <tr>
-                    <th>Traditional (%)</th>
-                    <th>14-Point Range</th>
-                    <th>Letter</th>
-                    <th>SBG Rating</th>
-                    <th>Proficiency Level Witch Standard</th>
+                    <th>n#</th>
+                    <th>nombre</th>
+                    <th>horas laboradas</th>
+                    <th>precio por horas</th>
+                    <th>total horas laboradas</th>
                 </tr>
             </thead>
             <tbody></tbody>
         </table>
 
-    </dialog>
 
 </body>
 </html>

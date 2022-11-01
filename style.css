@@ -1,13 +1,20 @@
-.img{
-    display: block;
-    margin: 0 auto;
+h3{
+    margin: 40px;
+    border: 5px #ffd9ce solid;
+    width: 900px;
+}
+
+p{
+    margin: 20px auto;
+    font-size: 1.3em;
+    font-weight: 700;
 }
 input[type="text"]{
-    display: block;
+    display: inline-block
 }
 input[type="submit"]{
     display: block;
-    margin-top: 10px;
+    margin: 10px 0px;
 }
 table thead tr{
     background: #fe8737;
