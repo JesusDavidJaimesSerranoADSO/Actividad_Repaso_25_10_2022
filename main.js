@@ -1,34 +1,26 @@
 addEventListener("DOMContentLoaded", (e)=>{
     let btnSave = document.querySelector(`input[type="submit"]`)
-    let numero = document.querySelector(`input[name="numero"`)
-    
-    btnSave.addEventListener("click", (e)=>{
-        let contador = 0
-        let mostrar = []
-        e.preventDefault();
-        for(let divisor = 1; divisor < numero.value; divisor++){
-            let resto = numero.value % divisor
-            if ( resto == 0){
-                mostrar.push(divisor) 
-                contador += divisor 
-
+    let contador = 0
+        btnSave.addEventListener("click", (e)=>{
+            e.preventDefault();
+            if (contador < 4){
+                let myTabla = document.querySelector("tbody");
+                let name = document.querySelector(`input[name="nombre"`)
+                let horas = document.querySelector(`input[name="horas"]`)
+                let total = horas.value * 5208.33
+                myTabla.insertAdjacentHTML("beforeend",`
+                    <tr>
+                    <th>${name.value}</th>
+                    <th>${horas.value}</th>
+                    <th>${5208.33}</th>
+                    <th>${total}</th>
+                    <th>${contador + 1}</th>
+                    </tr>
+                    `
+                )
+            contador++ 
+            name.value= ""
+            horas.value=""
             }
-        } 
-        if (contador == numero.value ){
-            var texto = "el numero es perfecto"
-        }
-        else{
-            var texto = "el numero no es perfecto"
-        }
-
-        let myTabla = document.querySelector("tbody");
-        myTabla.insertAdjacentHTML("beforeend",`
-            <tr>
-                <th>${mostrar}</th>
-                <th>${contador}</th>
-                <th>${texto}</th>
-            </tr>
-            `
-        )
-    })                     
+        })                     
 })

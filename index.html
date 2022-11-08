@@ -9,22 +9,25 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <h3>3.	Dados dos números enteros positivos N y D, se dice que D es un divisor de N si el resto de dividir N entre D es 0. Se dice que un número N es perfecto si la suma de sus divisores (excluido el propio N) es N. Por ejemplo 28 es perfecto, pues sus divisores (excluido elv28) son: 1, 2, 4, 7 y 14 y su suma es 1+2+4+7+14=28. Hacer un organigrama que dado un número N nos diga si es o no perfecto.</h3>
+    <h3>4.	Una compañía de seguros tiene contratados a N vendedores. Cada uno hace tres ventas a la semana. Su política de pagos es que un vendedor recibe un sueldo base, y un 10% extra por comisiones de sus ventas. El gerente de su compañía desea saber cuánto dinero obtendrá en la semana cada vendedor por concepto de comisiones por las tres ventas realizadas, y cuanto tomando en cuenta su sueldo base y sus comisiones.</h3>
 
 
     <form id="myForm" method="get">
-        <p>Numero perfecto </p>
-        <label>ingrese el numero N</label>
-        <input type="text" name="numero" placeholder="" required>
+        <p>nomina </p>
+        <input type="text" name="nombre" placeholder="nombre del vendedor" required>
+        <input type="number" name="base" placeholder="horas base" required>
+        <input type="number" name="ventas" placeholder="n de ventas" required>
         <input type="submit" value="Enviar">
     </form>
 
         <table>
             <thead>
                 <tr>
-                    <th>Divisores</th>
-                    <th>numero</th>
-                    <th>especifidad</th>
+                    
+                    <th>nombre</th>
+                    <th>horas base</th>
+                    <th>numero de ventas</th>
+                    <th>total de salario a pagar</th>
                 </tr>
             </thead>
             <tbody></tbody>
