@@ -10,27 +10,26 @@ p{
     font-weight: 700;
 }
 input[type="text"]{
-    display: inline-block
+    display: block;
+    margin-bottom: 10px;
 }
 input[type="submit"]{
     display: block;
     margin: 10px 0px;
 }
-table thead tr{
+table thead tr th{
     background: #fe8737;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-}
-table thead tr th{
     padding: 10px;
+    width: 200px;
 }
+
 table tbody tr{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-table tbody tr:nth-child(2n+1){
+table tbody tr{
+    
     background: #ffd9ce;
-}
-table tbody tr:nth-child(2n){
-    background: #ffeee7;
 }
